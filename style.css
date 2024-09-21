@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background: url('https://picsum.photos/id/8/1920/1080') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: black;
+}
+
+.about, .team, .services, .portfolio, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.team-container, .service-container, .portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member, .service, .portfolio-item {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.team-member img, .portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.service i {
+    font-size: 3rem;
+    color: #6c63ff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input, footer form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer form button {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .team-member, .service, .portfolio-item {
+        width: 100%;
+    }
+}
